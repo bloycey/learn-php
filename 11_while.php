@@ -16,9 +16,12 @@
                  
             $fruits = array('apple', 'banana', 'melon', 'jackfruit', 'magical beer fruit');
               
-                foreach($fruits as $fruit) {
-                    echo $fruit . "<br/>";
-                }
+              $i = 0;
+              
+              while($i < count($fruits)) {
+                  echo $fruits[$i] . "<br>";
+                  $i++;
+              }
                   
               ?>
               

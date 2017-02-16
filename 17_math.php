@@ -30,6 +30,38 @@
               echo (10 * 2) + 5;
               
               
+              $total = 20;
+              $total +=20;
+              $total +=10;
+              echo "<br>";
+              echo "The total is " . $total . " dollars";
+               echo "<br>";
+              
+              /*
+              for($i = 0; $i < 100; $i++) {
+                  if($i % 2 == 0) {
+                      echo "The number " . $i . " is even. <br>";
+                  } else {
+                      echo "The number " . $i . " is odd. <br>";
+                  }
+              }
+              */
+              
+              //FizzBuzz
+              
+              for($i = 0; $i <= 100; $i++) {
+                 if(($i % 3 == 0) && ($i % 5 !== 0)) {
+                     echo $i . ": Fizz <br>";
+                 } else if (($i % 5 == 0) && ($i % 3 !== 0)) {
+                     echo $i . ": Buzz <br>";
+                 } else if (($i % 3 == 0) && ($i % 5 == 0)) {
+                     echo $i . ": FIZZBUZZ! <br>";
+                 } else {
+                     echo $i . "<br>";
+                 }
+                  
+                  
+              }
               
               ?>
               
